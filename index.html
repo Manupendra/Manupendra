@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Manupendra Tiwari</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1>Hello! I'm <span class="header-name"> Manupendra </span></h1>
+			<span class="skill-title">Software Developer + DevOps Engineer</span>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#intro" class="active">About</a></li>
+				<li><a href="#experience">Professional Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#footer">Contact Me</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="dark-mode light-mode">
+
+			<!-- Introduction -->
+			<section id="intro" class="main">
+
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2 class="dark-mode light-mode">Who am I ?</h2>
+						</header>
+						<ul>
+							<li>
+								<p>
+								<div>I am currently working in MSCI Inc. as a Technology Associate.</div>
+								</p>
+							</li>
+							<li>
+								<p> I have 4+ years of experience at MSCI Inc. as a software engineer. I am proficient in developing REST APIs in Scala Jetty 
+								using threads for accepting parallel requests.
+								I am proficient in programming languages like Java, Python and Scala. I have experience in creating and managing CI/CD pipelines using Azure DevOps.
+								I have used Docker to containerize applications and deploy them to Azure Kubernetes Service (AKS) using Helm charts.
+								</p>
+							</li>
+							<!-- Toggle Dark Mode -->
+							<div class="toggler-container">
+									<div class="dark-mode-text-container">
+										<span class="dark-mode-text">Dark Mode fan like me ?</span>
+									</div>
+									<span><label class="switch">
+											<input type="checkbox">
+											<div class="slider round"></div>
+										</label></span>
+							</div>
+
+						</ul>
+					</div>
+					<span class="image"><img src="images/myImg.jpeg" alt="" /></span>
+				</div>
+			</section>
+
+
+			<!-- Experience Section -->
+
+			<section id="experience" class="main">
+				<header class="major">
+					<h2 class="dark-mode light-mode">Professional Experience</h2>
+				</header>
+				<div class="job-container">
+					<div class="job-title">Software Engineer, </div>
+					<div class="company-title">MSCI Inc.</div>
+				</div>
+				<div class="company-time">(June 2019 - Present)</div>
+				<div class="job-task-container">
+
+					<div class="job-project-title"> Development of Exposure Calculator Service </div>
+					<div class="techstack-title">TechStack : Scala, Jetty Server, REST HTTP API</div>
+					<p>Designed and implemented a high-performance server muliple endpoints using Jetty and Scala, utilizing the functional and object-oriented features of Scala to write efficient, scalable, and maintainable code.
+					Implemented concurrent and parallel processing using a variety of Scala features, including Futures, Parallel Collections, and Scala collections, to improve application performance and scalability.
+					Managed asynchronous task execution using the Scala ExecutionContext, ensuring efficient and effective utilization of system resources and optimized performance for multi-threaded applications</p>
+
+					<div class="job-project-title"> CI/CD of Exposure Calculator Service </div>
+					<div class="techstack-title">TechStack : YAML, Helm Charts, Kubernetes, Docker, ADO, Bash script</div>
+					<p>Create Dockerized Container for Exposure Calculator Service using DockerFiles. 
+					Pushed the image to ACR(Azure Container Register) using build pipeline which get triggered on every commit.
+					Implemented Helm chart to deploy the app service(Deployment, Service, Ingress, PVC, PV, Secrets k8s object) in AKS(Azure Kubernetes Service) using ADO(Azure Devops) pipeline.
+					Added Dependabot tool to scan the project libraries for updation to latest version which opens PR automatically with deafult branch in schedule manner.
+					Added SonarQube to publish the code coverage percentage, code smell, etc using scoverage scala tool.</p>
+
+					<div class="job-project-title">MSCI BEON - One Analytics Platform</div>
+					<div class="techstack-title">TechStack : Python, Scala, Confluence API, TeamCity API</div>
+					<p>Created Python Tool to automate for publishing the test results from TeamCity Pipeline to Confluence Page.
+					Contributed on addition of Regression Framework which automated test in Scala using TestNg.
+					Created a tool to compare two csv file in python using pandas library.</p>
+
+
+				</div>
+				<!-- <footer class="major">
+								<ul class="actions special">
+									<li><a href="generic.html" class="button">Show More</a></li>
+								</ul>
+						</footer> -->
+
+
+				<!-- Projects Section -->
+
+				<section id="projects" class="main">
+					<header class="major">
+						<h2 class="dark-mode light-mode">Projects</h2>
+					</header>
+					<ul class="features">
+						<li>
+							<a href="https://github.com/Manupendra/Employee" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">Employee Data Management</div>
+										<p class="project-content-text">To fetch the employee data functions developed using OOPs concepts and also showcases the seamless integration of including Docker, Kubernetes (K8s), and the ELK (Elasticsearch, Logstash, Kibana) Stack
+
+										</p>
+										<div class="project-techstack-title">TechStack</div>
+										<div class="project-techstack-items">Java</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/Manupendra/MumbaiTourGuide/tree/master" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">Tourist Place Recommendation</div>
+										<p class="project-content-text">This Project give the details of the places to rome around in Mumbai.
+										</p>
+										<div class="project-techstack-title">TechStack</div>
+										<div class="project-techstack-items">Java, Android</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<footer class="major">
+						<ul class="actions special">
+							<li><a href="https://www.linkedin.com/in/manupendra-tiwari" target="_blank" id="show-more"
+									class="more-button light-mode dark-mode">Show More</a>
+							</li>
+						</ul>
+					</footer>
+				</section>
+			</section>
+
+
+			<!-- Get Started -->
+			<!-- <section id="cta" class="main special">
+								<header class="major">
+									<h2 class="dark-mode light-mode">Congue imperdiet</h2>
+									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section> -->
+
+		</div>
+
+		<!-- Footer - (Contact Section) -->
+		<footer id="footer">
+			<section>
+				<h2>Contact Me</h2>
+				<dl class="alt">
+					<dt>Phone</dt>
+					<dd>+91 9769364335</dd>
+					<dt>Email</dt>
+					<dd><a href="mailto:manupendratiwari@gmail.com" target="_blank" style="cursor: pointer;">manupendratiwari@gmail.com</a>
+					</dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/manupendra-tiwari/" target="_blank"
+							class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:manupendratiwari@gmail.com" target="_blank" class="icon brands fa-google alt"><span
+								class="label">Gmail</span></a></li>
+					<li><a href="https://github.com/Manupendra" target="_blank" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">Manupendra Tiwari &copy; 2023</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

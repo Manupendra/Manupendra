@@ -22,12 +22,12 @@
 
 ### Backend
 <p>
+  <img src="https://img.shields.io/badge/Scala-ED7377?style=for-the-badge&logo=scala&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-E32227?style=for-the-badge&logo=java&logoColor=white" />
   <img src="https://img.shields.io/badge/Kubernetes-1B99D4?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-89CFF0?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-%2307405e.svg?&style=for-the-badge&logo=microsoft&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scala-ED7377?style=for-the-badge&logo=scala&logoColor=white" />
   
 </p>
   

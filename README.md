@@ -1,6 +1,6 @@
 ## 👋 What's up?
 
-## I am Manupendra , a developer + devOps Engineer. 
+## I am Manupendra , a Developer + DevOps Engineer. 
 
 <p>
   <a href="https://www.linkedin.com/in/manupendra-tiwari" target="_blank">

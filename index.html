@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manupendra Tiwari — DevOps &amp; Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo"><span class="accent">$</span> MT</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="container hero-content">
+      <div class="terminal-bar reveal">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-bar-text">manupendra@devops: ~/portfolio</span>
+      </div>
+      <div class="terminal-block reveal reveal-delay-1">
+        <p class="terminal-cmd">$ deploying-scalable-infrastructure --mode=production</p>
+      </div>
+      <div class="terminal-block reveal reveal-delay-2">
+        <p class="terminal-prompt">manupendra@devops:~$ <span class="cmd-text">whoami</span></p>
+        <p class="terminal-output">&gt; <span id="typed"></span><span class="cursor-blink">_</span></p>
+      </div>
+      <h1 class="hero-headline reveal reveal-delay-3">
+        DevOps Engineer &amp; <span class="accent-glow">Platform Architect</span>
+      </h1>
+      <p class="hero-desc reveal reveal-delay-3">
+        I build scalable cloud infrastructure and automate deployment pipelines that power innovation at scale. 6.5+ years architecting Azure-native platforms, CI/CD for 200+ microservices, and high-performance backend APIs.
+      </p>
+      <div class="hero-btns reveal reveal-delay-4">
+        <a href="#contact" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Get in Touch
+        </a>
+        <a href="#experience" class="btn btn-outline">View Experience</a>
+        <a href="https://linkedin.com/in/manupendra-tiwari" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Manupendra" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+
+      <!-- Capability Cards -->
+      <div class="cap-grid reveal reveal-delay-4">
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          </div>
+          <h3>Cloud Architecture</h3>
+          <p>Azure, AWS, AKS clusters, multi-region DR strategies</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>CI/CD Automation</h3>
+          <p>200+ microservice pipelines with zero-downtime deployments</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>DevSecOps</h3>
+          <p>Checkmarx, SonarQube, Trivy — 100% vulnerability scanning</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Observability</h3>
+          <p>LGTM stack, ELK, Prometheus — 66% cost reduction achieved</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform modules, Helm charts, declarative deployments</p>
+        </div>
+        <div class="cap-card">
+          <div class="cap-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Performance</h3>
+          <p>30x API optimization, HPA auto-scaling, cluster collocation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT NUMBERS ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> cat /etc/profile.d/impact.conf</div>
+      <h2 class="section-title reveal">Impact by the <span class="accent-glow">Numbers</span></h2>
+      <p class="section-subtitle reveal">Real metrics from infrastructure transformations and platform engineering</p>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <span class="stat-number" data-count="6" data-suffix="+">0</span>
+          <h3>Years Experience</h3>
+          <p>Cloud &amp; DevOps engineering</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <span class="stat-number" data-count="200" data-suffix="+">0</span>
+          <h3>Microservices</h3>
+          <p>Deployed via automated CI/CD</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <span class="stat-number" data-count="66" data-suffix="%">0</span>
+          <h3>Cost Reduction</h3>
+          <p>Observability stack migration</p>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-number" data-count="15" data-suffix="+">0</span>
+          <h3>AKS Clusters</h3>
+          <p>Managed &amp; migrated</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <span class="stat-number" data-count="30" data-suffix="x">0</span>
+          <h3>Performance Boost</h3>
+          <p>API communication optimization</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <span class="stat-number" data-count="4">0</span>
+          <h3>Certifications</h3>
+          <p>CKA, CKAD, AZ-204, AZ-400</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> grep -r "expertise" /var/log/career.log</div>
+      <h2 class="section-title reveal">./skills <span class="accent-glow">--list --verbose</span></h2>
+      <p class="section-subtitle reveal">A curated selection of my expertise in DevOps and Cloud Computing</p>
+      <div class="skills-tile-grid reveal" id="skillsGrid">
+        <div class="skill-tile"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+        <div class="skill-tile"><i class="devicon-azure-plain colored"></i><span>Azure</span></div>
+        <div class="skill-tile"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+        <div class="skill-tile"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="skill-tile"><i class="devicon-helm-plain colored"></i><span>Helm</span></div>
+        <div class="skill-tile"><i class="devicon-terraform-plain colored"></i><span>Terraform</span></div>
+        <div class="skill-tile"><i class="devicon-ansible-plain colored"></i><span>Ansible</span></div>
+        <div class="skill-tile"><i class="devicon-githubactions-plain colored"></i><span>GitHub Actions</span></div>
+        <div class="skill-tile"><i class="devicon-jenkins-line colored"></i><span>Jenkins</span></div>
+        <div class="skill-tile"><i class="devicon-gitlab-plain colored"></i><span>GitLab CI</span></div>
+        <div class="skill-tile"><i class="devicon-argocd-plain colored"></i><span>ArgoCD</span></div>
+        <div class="skill-tile"><i class="devicon-azuredevops-plain colored"></i><span>Azure DevOps</span></div>
+        <div class="skill-tile"><i class="devicon-prometheus-original colored"></i><span>Prometheus</span></div>
+        <div class="skill-tile"><i class="devicon-grafana-plain colored"></i><span>Grafana</span></div>
+        <div class="skill-tile"><i class="devicon-elasticsearch-plain colored"></i><span>ELK Stack</span></div>
+        <div class="skill-tile"><svg class="skill-tile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><circle cx="9" cy="12" r="1" fill="#FF9900"/></svg><span>CloudWatch</span></div>
+        <div class="skill-tile"><svg class="skill-tile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1904DA" stroke-width="1.5"><path d="M12 2L4 7v5c0 5.25 3.4 10.15 8 11.25C16.6 22.15 20 17.25 20 12V7l-8-5z"/><path d="M9 12l2 2 4-4" stroke="#1904DA" stroke-width="2"/></svg><span>Trivy</span></div>
+        <div class="skill-tile"><i class="devicon-sonarqube-plain colored"></i><span>SonarQube</span></div>
+        <div class="skill-tile skill-hidden"><svg class="skill-tile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFD814" stroke-width="1.5"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M12 3a4 4 0 0 0-4 4v4h8V7a4 4 0 0 0-4-4z"/><circle cx="12" cy="16" r="1.5" fill="#FFD814"/></svg><span>HashiCorp Vault</span></div>
+        <div class="skill-tile skill-hidden"><svg class="skill-tile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#DD344C" stroke-width="1.5"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg><span>AWS Secrets Mgr</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-dynamodb-plain colored"></i><span>DynamoDB</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-apachekafka-original colored"></i><span>Kafka</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-rabbitmq-original colored"></i><span>RabbitMQ</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-scala-plain colored"></i><span>Scala</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-bash-plain colored"></i><span>Bash</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="skill-tile skill-hidden"><i class="devicon-linux-plain colored"></i><span>Linux Sys Admin</span></div>
+        <div class="skill-tile skill-hidden"><svg class="skill-tile-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0078D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="12" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="12" y1="9" x2="12" y2="15"/></svg><span>Networking</span></div>
+      </div>
+      <div class="skills-toggle-wrap reveal">
+        <button class="btn btn-outline skills-toggle" id="skillsToggle">
+          <span>Show More</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> cat /var/log/work-history.log | head -20</div>
+      <h2 class="section-title reveal">Work <span class="accent-glow">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-header-left">
+                <img src="assets/tata-digital.png" alt="Tata Digital" class="company-logo" />
+                <div>
+                  <h3>Sr. Digital Engineer 2 (Lead Engineer)</h3>
+                  <p class="timeline-company">Tata Digital Pvt Ltd. &middot; Payment TechOps</p>
+                </div>
+              </div>
+              <span class="timeline-date">May 2024 &mdash; Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Engineered DR switchover strategy for high-concurrency payment systems, transitioning infrastructure across regions with zero data loss.</li>
+              <li>Spearheaded migration of 15+ AKS clusters from NGINX Ingress to Gateway API framework, eliminating long-term technical debt.</li>
+              <li>Designed automated CI/CD framework supporting 200+ microservice deployments with standardized templates and zero-downtime strategies.</li>
+              <li>Implemented LGTM observability stack on AKS, achieving 66% monthly cost reduction vs Azure Application Insights.</li>
+              <li>Deployed RabbitMQ &amp; ELK Stack with Filebeat on AKS for end-to-end distributed application monitoring.</li>
+              <li>Built reusable Terraform modules for Azure resources (VMs, Web Apps, AKS) enabling consistent multi-environment deployments.</li>
+              <li>Architected DevSecOps framework with Checkmarx (SAST), DefectDojo, and SonarQube for 100% pre-deployment vulnerability scanning.</li>
+              <li>Developed automated service recovery solution by creating systemd service files for 7–10 Java Spring Boot applications across ~20 Azure Linux VMs, enabling automatic process startup post-patching — eliminating 4+ hours of manual intervention per maintenance window and saving 95% of recovery time. <span class="highlight-badge">&#127942; Quarterly Employee Award &#10024;</span></li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Kubernetes</span><span>Terraform</span><span>Azure DevOps</span><span>ELK</span><span>LGTM</span><span>Helm</span><span>Docker</span><span>systemd</span>
+            </div>
+          </div>
+        </div>
+        <!-- MSCI — DevOps -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-header-left">
+                <img src="assets/msci.png" alt="MSCI" class="company-logo" />
+                <div>
+                  <h3>Associate, Analytics Engineering — DevOps</h3>
+                  <p class="timeline-company">MSCI Inc.</p>
+                </div>
+              </div>
+              <span class="timeline-date">June 2019 &mdash; May 2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Led the lift-and-shift migration of services from Azure Cloud to an on-premises Rancher Kubernetes cluster, achieving a 30x improvement in API-to-API communication through cluster collocation.</li>
+              <li>Authored YAML manifests for Azure DevOps pipelines to build and push Docker images to Azure Container Registry (ACR) and deploy Helm charts to AKS clusters (Deployments, Secrets, Ingress, ConfigMaps, PVC, PV) with HPA for autoscaling.</li>
+              <li>Provisioned PVC and PV Kubernetes objects to persist pod log files (JVM heap dumps, GC logs) to NFS-backed Azure Files storage.</li>
+              <li>Configured NGINX Ingress Controller for service load balancing and enforced TLS/SSL termination for secure API communication.</li>
+              <li>Created Azure DevOps build pipelines for Gradle-based Java and Scala projects, publishing versioned Docker images to ACR.</li>
+              <li>Designed application deployment pipelines using Azure Pipelines for streamlined releases across Dev, UAT, and Production environments.</li>
+              <li>Implemented REST endpoints for readiness and liveness probes to ensure robust container health monitoring.</li>
+              <li>Integrated WhiteSource vulnerability scanning into the container build process to enforce security compliance before deployment.</li>
+              <li>Configured Dependabot with Gradle to automatically generate pull requests for dependency updates, proactively addressing security vulnerabilities.</li>
+              <li>Implemented Azure Application Insights to monitor container resource utilization (memory, CPU, request throughput) and configured alerting rules for proactive incident response.</li>
+              <li>Integrated Application Insights with services for centralized logging and telemetry collection using the OpenTelemetry (OTel) agent.</li>
+              <li>Integrated SonarQube with the CI pipeline using the Scoverage tool to enforce code quality standards and track code coverage metrics.</li>
+              <li>Developed Bash scripts to automate repetitive pipeline tasks, reducing manual intervention and improving deployment consistency.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Kubernetes</span><span>Docker</span><span>Azure DevOps</span><span>Helm</span><span>Terraform</span><span>NGINX Ingress</span><span>SonarQube</span><span>Bash</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MSCI — Developer -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-header-left">
+                <img src="assets/msci.png" alt="MSCI" class="company-logo" />
+                <div>
+                  <h3>Associate, Analytics Engineering — Developer</h3>
+                  <p class="timeline-company">MSCI Inc.</p>
+                </div>
+              </div>
+              <span class="timeline-date">June 2019 &mdash; May 2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Designed and implemented a high-performance REST API server using JAX-RS and Scala, leveraging Scala's functional and object-oriented capabilities to deliver efficient, scalable, and maintainable code.</li>
+              <li>Implemented concurrent and parallel processing using Scala Futures, Parallel Collections, and advanced collection operations to significantly improve application performance and throughput.</li>
+              <li>Managed asynchronous task execution using CompletableFuture, ensuring efficient utilization of system resources and optimized performance for multi-threaded applications.</li>
+              <li>Implemented API authorization using OAuth 2.0, JWK, and JWT to enforce secure access control across services.</li>
+              <li>Integrated SonarQube with the Scoverage tool and increased code coverage from 60% to 91%, improving overall code quality and reducing technical debt.</li>
+              <li>Optimized build and regression test performance by implementing parallel execution of JUnit tests written with ScalaTest (WordSpec), reducing overall test duration by 30–40%.</li>
+              <li>Developed a performance and load testing framework using Gatling to benchmark and validate the scalability of the analytics engine API.</li>
+              <li>Authored complex SQL queries against relational databases to validate data integrity returned by the DB API layer.</li>
+              <li>Developed a Python automation tool to publish TeamCity test results to Confluence pages, streamlining reporting workflows.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Scala</span><span>Java</span><span>JAX-RS</span><span>Python</span><span>OAuth</span><span>Gatling</span><span>ScalaTest</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> ls -la /etc/certifications/</div>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-badge"><img src="https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png" alt="CKA Badge" /></div>
+          <h3>CKA</h3>
+          <p>Certified Kubernetes Administrator</p>
+          <span class="cert-issuer">CNCF &middot; Valid till July 2026</span>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-badge"><img src="assets/ckad-badge.png" alt="CKAD Badge" /></div>
+          <h3>CKAD</h3>
+          <p>Certified Kubernetes Application Developer</p>
+          <span class="cert-issuer">CNCF &middot; Valid till July 2026</span>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-badge"><img src="https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png" alt="AZ-204 Badge" /></div>
+          <h3>AZ-204</h3>
+          <p>Azure Developer Associate</p>
+          <span class="cert-issuer">Microsoft &middot; Valid till Oct 2026</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-badge"><img src="https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" alt="AZ-400 Badge" /></div>
+          <h3>AZ-400</h3>
+          <p>Azure DevOps Engineer Expert</p>
+          <span class="cert-issuer">Microsoft &middot; Valid till Oct 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> git log --oneline --graph /projects/</div>
+      <h2 class="section-title reveal">Featured <span class="accent-glow">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card expandable reveal">
+          <div class="project-number">01</div>
+          <h3>UPI Payment Platform — Infra &amp; CI/CD</h3>
+          <p class="project-summary">Architected the complete Production and DR infrastructure for the UPI payment track on Azure using Terraform, and built CI/CD pipelines for 15+ microservices across Dev, SIT, and Prod.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Provisioned end-to-end Azure infrastructure using Terraform modules — AKS clusters, Key Vault, PostgreSQL, MongoDB, Redis Cache, Event Hub, Grafana, DNS Zones, NSGs, VNets, Subnets, Storage Accounts, and networking rules.</li>
+              <li>Designed and configured DR environment mirroring production for high-availability and business continuity.</li>
+              <li>Built standardized Azure DevOps CI/CD pipelines for 15+ microservices with Helm chart deployments, automated testing, and zero-downtime rollout strategies across three environments.</li>
+              <li>Implemented environment-specific variable management using Terraform workspaces and ADO variable groups.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>Terraform</span><span>AKS</span><span>Azure DevOps</span><span>DR</span><span>Key Vault</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Grafana</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="project-card expandable reveal reveal-delay-1">
+          <div class="project-number">02</div>
+          <h3>CI/CD Framework for 200+ Microservices</h3>
+          <p class="project-summary">Built a standardized, automated CI/CD pipeline framework with Azure DevOps supporting 200+ microservices with zero-downtime deployments.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Designed reusable YAML pipeline templates consumed by 200+ microservice repositories, ensuring consistent build, test, and deployment workflows.</li>
+              <li>Integrated DevSecOps gates including Checkmarx (SAST), SonarQube code quality checks, and container vulnerability scanning prior to deployment.</li>
+              <li>Implemented Helm chart management with automated versioning and rollback capabilities for AKS deployments.</li>
+              <li>Achieved zero-downtime deployments using rolling update strategies and health-check validations.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>Azure DevOps</span><span>Helm</span><span>Docker</span><span>DevSecOps</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="project-card expandable reveal reveal-delay-2">
+          <div class="project-number">03</div>
+          <h3>LGTM Observability Stack</h3>
+          <p class="project-summary">Spearheaded POC and implementation of the LGTM observability stack on AKS, resulting in 66% monthly cost reduction versus Azure Application Insights.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Deployed Loki for log aggregation, Grafana for dashboarding, Tempo for distributed tracing, and Mimir for long-term metrics storage on AKS.</li>
+              <li>Migrated monitoring from Azure Application Insights to the LGTM stack, reducing monthly observability costs by 66%.</li>
+              <li>Created custom Grafana dashboards for real-time service health, latency tracking, and resource utilization across all environments.</li>
+              <li>Established alerting rules and on-call notification workflows integrated with team communication channels.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>Grafana</span><span>Loki</span><span>Tempo</span><span>Mimir</span><span>Kubernetes</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="project-card expandable reveal">
+          <div class="project-number">04</div>
+          <h3>Exposure Calculator Service</h3>
+          <p class="project-summary">Built a high-performance REST API server using Scala &amp; Jetty with multi-threaded parallel processing. Achieved 30x API communication improvement.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Designed and implemented a high-performance server with multiple endpoints using Jetty and Scala, leveraging functional and object-oriented paradigms for scalable code.</li>
+              <li>Implemented concurrent processing using Scala Futures, Parallel Collections, and ExecutionContext for optimized multi-threaded performance.</li>
+              <li>Achieved 30x enhancement in API-to-API communication by strategically leveraging cluster collocation benefits.</li>
+              <li>Added OAuth 2.0 / JWT-based authorization and comprehensive readiness/liveness probe endpoints.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>Scala</span><span>Jetty</span><span>REST API</span><span>Performance</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="project-card expandable reveal reveal-delay-1">
+          <div class="project-number">05</div>
+          <h3>Infrastructure as Code — Terraform Modules</h3>
+          <p class="project-summary">Created reusable Terraform modules for provisioning Azure resources enabling consistent deployments across multiple environments.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Built modular Terraform configurations for VMs, Web Apps, AKS, ACR, and VMSS with parameterized inputs for environment-specific customization.</li>
+              <li>Implemented remote state management with Azure Storage backends and state locking for safe concurrent operations.</li>
+              <li>Integrated Terraform plan/apply workflows into Azure DevOps pipelines with approval gates for production changes.</li>
+              <li>Standardized tagging, naming conventions, and resource group strategies across all provisioned infrastructure.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>Terraform</span><span>Azure</span><span>IaC</span><span>Modules</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="project-card expandable reveal reveal-delay-2">
+          <div class="project-number">06</div>
+          <h3>ELK Stack &amp; RabbitMQ Observability</h3>
+          <p class="project-summary">Deployed end-to-end observability solution using ELK Stack with Filebeat and RabbitMQ messaging on AKS for distributed monitoring.</p>
+          <div class="project-detail">
+            <ul>
+              <li>Deployed Elasticsearch, Logstash, and Kibana on AKS with Filebeat DaemonSets for automated log collection from all pod containers.</li>
+              <li>Configured RabbitMQ as a messaging queue buffer between Filebeat and Logstash for reliable log ingestion at scale.</li>
+              <li>Built Kibana dashboards for real-time log search, error tracking, and application performance monitoring.</li>
+              <li>Implemented index lifecycle management policies for log retention and storage optimization.</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>ELK</span><span>RabbitMQ</span><span>Filebeat</span><span>AKS</span></div>
+          <button class="project-expand-btn" aria-label="Expand project details">
+            <span>Read More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> cat /etc/education.conf</div>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="education-card reveal">
+        <div class="edu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M14 22v-4a2 2 0 0 0-4 0v4"/><path d="M18 5v17"/><path d="M6 5v17"/></svg>
+        </div>
+        <div>
+          <h3>Bachelor of Engineering — Computer Engineering</h3>
+          <p class="edu-college">Fr. Conceicao Rodrigues College of Engineering &middot; Mumbai University</p>
+          <p class="edu-meta">7.93 CGPA &middot; July 2015 — May 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> ssh connect@manupendra.dev</div>
+      <h2 class="section-title reveal">Let's <span class="accent-glow">Connect</span></h2>
+      <p class="section-subtitle reveal">Ready to discuss platform engineering solutions? I'd love to hear about your infrastructure challenges.</p>
+      <div class="contact-grid">
+        <a href="mailto:manupendratiwari@gmail.com" class="contact-card reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <h3>Email</h3>
+          <p>manupendratiwari@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/manupendra-tiwari" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <h3>LinkedIn</h3>
+          <p>manupendra-tiwari</p>
+        </a>
+        <a href="https://github.com/Manupendra" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <h3>GitHub</h3>
+          <p>Manupendra</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p><span class="accent">$</span> echo "Designed &amp; Built by <strong>Manupendra Tiwari</strong> &copy; 2026"</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

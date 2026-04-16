@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <a href="#hero" class="nav-logo"><span class="accent">$</span> MT</a>
@@ -72,8 +75,8 @@
         <p class="terminal-prompt">manupendra@devops:~$ <span class="cmd-text">whoami</span></p>
         <p class="terminal-output">&gt; <span id="typed"></span><span class="cursor-blink">_</span></p>
       </div>
-      <h1 class="hero-headline reveal reveal-delay-3">
-        DevOps Engineer &amp; <span class="accent-glow">Platform Architect</span>
+      <h1 class="hero-headline reveal reveal-delay-3" data-text="DevOps Engineer & Platform Architect">
+        <span class="glitch-layer">DevOps Engineer &amp; <span class="accent-glow">Platform Architect</span></span>
       </h1>
       <p class="hero-desc reveal reveal-delay-3">
         I build scalable cloud infrastructure and automate deployment pipelines that power innovation at scale. 6.5+ years architecting Azure-native platforms, CI/CD for 200+ microservices, and high-performance backend APIs.
@@ -135,6 +138,43 @@
           </div>
           <h3>Performance</h3>
           <p>30x API optimization, HPA auto-scaling, cluster collocation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CODE IN PRODUCTION ===== -->
+  <section class="section section-alt code-showcase" id="code">
+    <div class="container">
+      <div class="section-cmd reveal"><span class="accent">$</span> tail -f /var/log/infra/deploy.log</div>
+      <h2 class="section-title reveal">Code in <span class="accent-glow">Production</span></h2>
+      <p class="section-subtitle reveal">Real infrastructure patterns shipped to production &mdash; typing live.</p>
+
+      <div class="ide-window reveal">
+        <div class="ide-header">
+          <div class="ide-dots">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <div class="ide-tabs" id="ideTabs">
+            <button class="ide-tab active" data-idx="0"><i class="devicon-terraform-plain colored"></i><span>main.tf</span></button>
+            <button class="ide-tab" data-idx="1"><i class="devicon-kubernetes-plain colored"></i><span>deployment.yaml</span></button>
+            <button class="ide-tab" data-idx="2"><i class="devicon-docker-plain colored"></i><span>Dockerfile</span></button>
+            <button class="ide-tab" data-idx="3"><i class="devicon-azuredevops-plain colored"></i><span>azure-pipelines.yml</span></button>
+          </div>
+          <div class="ide-live"><span class="live-dot"></span><span>LIVE</span></div>
+        </div>
+        <div class="ide-body">
+          <div class="ide-gutter" id="ideGutter">1</div>
+          <pre class="ide-code"><code id="ideCode"></code></pre>
+        </div>
+        <div class="ide-statusbar">
+          <span class="sb-item"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6"/><path d="M18 6h-3a3 3 0 0 0-3 3v6"/><circle cx="18" cy="6" r="3"/></svg> main</span>
+          <span class="sb-item" id="sbLang">HCL</span>
+          <span class="sb-item">UTF-8</span>
+          <span class="sb-item" id="sbPos">Ln 1, Col 1</span>
+          <span class="sb-item sb-right">Spaces: 2</span>
         </div>
       </div>
     </div>

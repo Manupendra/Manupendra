@@ -79,7 +79,7 @@
         <span class="glitch-layer">DevOps Engineer &amp; <span class="accent-glow">Platform Architect</span></span>
       </h1>
       <p class="hero-desc reveal reveal-delay-3">
-        I build scalable cloud infrastructure and automate deployment pipelines that power innovation at scale. 6.5+ years architecting Azure-native platforms, CI/CD for 200+ microservices, and high-performance backend APIs.
+        I build scalable cloud infrastructure and automate deployment pipelines that power innovation at scale. 7+ years architecting Azure-native platforms, CI/CD for 200+ microservices, and high-performance backend APIs.
       </p>
       <div class="hero-btns reveal reveal-delay-4">
         <a href="#contact" class="btn btn-primary">
@@ -188,7 +188,7 @@
       <p class="section-subtitle reveal">Real metrics from infrastructure transformations and platform engineering</p>
       <div class="stats-grid">
         <div class="stat-card reveal">
-          <span class="stat-number" data-count="6" data-suffix="+">0</span>
+          <span class="stat-number" data-count="7" data-suffix="+">0</span>
           <h3>Years Experience</h3>
           <p>Cloud &amp; DevOps engineering</p>
         </div>
@@ -304,6 +304,7 @@
               <li>Architected DevSecOps framework with Checkmarx (SAST), DefectDojo, and SonarQube for 100% pre-deployment vulnerability scanning.</li>
               <li>Developed automated service recovery solution by creating systemd service files for 7–10 Java Spring Boot applications across ~20 Azure Linux VMs, enabling automatic process startup post-patching — eliminating 4+ hours of manual intervention per maintenance window and saving 95% of recovery time. <span class="highlight-badge">&#127942; Quarterly Employee Award &#10024;</span></li>
               <li>Built <strong>K8s Resource Guardian</strong>, a production-grade Kubernetes Operator in Go that monitors real-time CPU and memory utilization of Deployments and automatically restarts pods exceeding configurable thresholds — leveraging Go routines, channels, and the controller-runtime framework for non-blocking reconciliation loops.</li>
+              <li>Leveraged Go's concurrency model (goroutines &amp; channels) to build concurrent metric scrapers and health-check aggregators using fan-out/fan-in patterns — enabling parallel monitoring of 20+ services with context-propagated cancellation and configurable timeouts, achieving non-blocking real-time observability without thread-pool overhead.</li>
             </ul>
             <div class="timeline-tags">
               <span>Kubernetes</span><span>Terraform</span><span>Azure DevOps</span><span>ELK</span><span>LGTM</span><span>Helm</span><span>Docker</span><span>systemd</span><span>Go</span>
@@ -338,9 +339,10 @@
               <li>Integrated Application Insights with services for centralized logging and telemetry collection using the OpenTelemetry (OTel) agent.</li>
               <li>Integrated SonarQube with the CI pipeline using the Scoverage tool to enforce code quality standards and track code coverage metrics.</li>
               <li>Developed Bash scripts to automate repetitive pipeline tasks, reducing manual intervention and improving deployment consistency.</li>
+              <li>Created a custom Gradle task (<code>preflightCheck</code>) to run environment sanity tests before deploying to Production — validating config integrity, connectivity to downstream services, and environment-specific variables — catching misconfigurations early and preventing production-breaking deployments.</li>
             </ul>
             <div class="timeline-tags">
-              <span>Kubernetes</span><span>Docker</span><span>Azure DevOps</span><span>Helm</span><span>Terraform</span><span>NGINX Ingress</span><span>SonarQube</span><span>Bash</span>
+              <span>Kubernetes</span><span>Docker</span><span>Azure DevOps</span><span>Helm</span><span>Terraform</span><span>NGINX Ingress</span><span>SonarQube</span><span>Bash</span><span>Gradle</span>
             </div>
           </div>
         </div>

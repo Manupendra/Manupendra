@@ -498,6 +498,16 @@ img { max-width: 100%; display: block; }
 .project-expand-btn svg { transition: transform var(--transition); }
 .project-card.expanded .project-expand-btn svg { transform: rotate(180deg); }
 .project-card.expanded .project-tags { margin-top: 14px; }
+.project-links { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.project-link-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 14px; border-radius: 20px; font-size: 0.73rem; font-weight: 600;
+  font-family: var(--font-mono); text-decoration: none; transition: all var(--transition);
+  border: 1px solid var(--border); color: var(--text-secondary); background: var(--card-bg);
+}
+.project-link-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+.project-link-demo { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+.project-link-demo:hover { opacity: 0.8; }
 
 /* --- Education --- */
 .education-card {
